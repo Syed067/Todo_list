@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: gainsboro;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    #outer-div {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px gray;
+    }
+    
+    input[type="text"] {
+      width: 70%;
+      padding: 10px;
+      font-size: 20px;
+      border-radius: 5px;
+      border: 1px solid gray;
+    }
+    
+    button {
+      padding: 5px 20px;
+      font-size: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: green;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: red;
+    }
+   
+  </style>
+</head>
+<body>
+  <h1>Todo List App</h1>
+  <div id="outer-div">
+  
+  <input type="text" id="taskInput" placeholder="Add a task">
+  <button onclick="addTask()">Add</button>
+  
+  <ul id="taskList">
+    
+  </ul>
+  </div>
+  <script src="todo.js"></script>
+ 
+  
+</body>
+</html>
